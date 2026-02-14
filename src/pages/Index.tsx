@@ -1,8 +1,14 @@
-import { Mail, Share2, ExternalLink, GraduationCap, BarChart3, BookOpen } from "lucide-react";
+import { Mail, Share2, ExternalLink, GraduationCap, BarChart3, BookOpen, Star } from "lucide-react";
 import heroCampus from "@/assets/hero-campus.jpg";
 import { toast } from "sonner";
 
 const links = [
+  {
+    title: "MLRIT Google Review",
+    url: "https://share.google/IB1ZmNCgv0QV1XLBy",
+    icon: Star,
+    color: "hsl(45, 90%, 50%)",
+  },
   {
     title: "Shiksha Reviews",
     url: "https://www.shiksha.com/college/mlr-institute-of-technology-jeedimetla-hyderabad-25370?isource=csearch&rf=searchWidget",
