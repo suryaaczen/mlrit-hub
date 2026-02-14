@@ -58,13 +58,15 @@ const Index = () => {
           <div className="flex gap-3 mt-4 animate-fade-in animate-stagger-1" style={{ animationFillMode: "both" }}>
             <a
               href="mailto:info@mlrinstitutions.ac.in"
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-xs font-medium hover:bg-accent transition-colors"
+              aria-label="Contact MLRIT via email"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-xs font-medium hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <Mail className="w-3.5 h-3.5" /> Contact
             </a>
             <button
               onClick={handleShare}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-xs font-medium hover:bg-accent transition-colors"
+              aria-label="Share MLRIT Review Centre link"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-xs font-medium hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <Share2 className="w-3.5 h-3.5" /> Share
             </button>
@@ -78,7 +80,8 @@ const Index = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`link-button flex items-center gap-4 w-full px-5 py-4 rounded-2xl bg-card text-card-foreground animate-fade-in animate-stagger-${i + 2}`}
+                aria-label={`Open ${link.title} in a new tab`}
+                className={`link-button flex items-center gap-4 w-full px-5 py-4 rounded-2xl bg-card text-card-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 animate-fade-in animate-stagger-${i + 2}`}
                 style={{ animationFillMode: "both" }}
               >
                 <div
